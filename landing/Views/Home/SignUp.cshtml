@@ -1,0 +1,22 @@
+@model User
+
+<div class="text-center">
+    <div class="background">
+        <form class="form-signin" asp-action="SignUp" asp-controller="Home" method="post">
+            <h1 class="h3 mb-3 font-weigt-normal">Please provide us with your full name and email address</h1>
+            <span asp-validation-for="FirstName"></span>
+            <label asp-for="FirstName" class="sr-only"></label>
+            <input class="form-control" asp-for="FirstName" placeholder="John" required>
+            <br>
+            <span asp-validation-for="LastName"></span>
+            <label asp-for="LastName" class="sr-only"></label>
+            <input class="form-control" asp-for="LastName" placeholder="Hancock" required>
+            <br>
+            <span asp-validation-for="Email"></span>
+            <label asp-for="Email" class="sr-only"></label>
+            <input asp-for="Email" class="form-control" placeholder="Email address" required>
+            <br>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+        </form>
+    </div>
+</div>

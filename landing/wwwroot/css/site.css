@@ -1,0 +1,88 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+.background {
+    padding: 10%;
+    background-color: #a3f7b5;
+}
+.background h1 {
+    margin-bottom: 30px;
+}
+h3 a:hover, a:active {
+    color:black;
+    text-decoration: none;
+    background-color: #3A96E8;
+}
+h3 a:link, a:visited {
+    
+    color:black;
+    border-radius: 5px;
+    background-color: #3A96E8;
+    padding:10px 15% 10px 15%;
+    width: 50px;
+    height: 20px;
+}
+a {
+}
+footer {
+    padding: 20px 40px 20px 40px;
+    background-color: #90BAAD;
+    text-align: center;
+}
+hr.style-three {
+height: 30px;
+border-style: solid;
+border-color: black;
+border-width: 1px 0 0 0;
+border-radius: 20px;
+}
+hr.style-three:before {
+display: block;
+content: "";
+height: 30px;
+margin-top: -31px;
+border-style: solid;
+border-color: black;
+border-width: 0 0 1px 0;
+border-radius: 20px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}

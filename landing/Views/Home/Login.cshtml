@@ -1,0 +1,20 @@
+@model LoginUser
+<div class="text-center">
+    <div class="background">
+        <form class="form-signin" asp-action="Login" asp-controller="Home" method="post">
+            <h1 class="h3 mb-3 font-weigt-normal">Admin sign in</h1>
+            <span asp-validation-for="Email"></span>
+            <label asp-for="Email" class="sr-only"></label>
+            <input asp-for="Email" class="form-control" placeholder="Email address" required autofocus>
+            <br>
+    
+            <span asp-validation-for="Password"></span>
+            <label asp-for="Password" class="sr-only"></label>
+            <input asp-for="Password" class="form-control" placeholder="Password" required>
+            <br>
+            
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <a asp-action="Register">Register</a>
+        </form>
+    </div>
+</div>

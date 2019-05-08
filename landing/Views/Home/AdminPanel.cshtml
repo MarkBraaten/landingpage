@@ -1,0 +1,27 @@
+<h1>Welcome, @ViewBag.User.FirstName</h1>
+<a asp-action="logout">Logout</a>
+<a asp-action="Index">Landing Page</a>
+<hr>
+
+<h2>Subscriptions</h2>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Email</th>
+      <th scope="col">Created At</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(var c in ViewBag.Customers)
+    {
+      <tr>
+        <td>@c.FirstName</td>
+        <td>@c.LastName</td>
+        <td>@c.Email</td>
+        <td>@c.CreatedAt</td>
+      </tr>
+    }
+  </tbody>
+</table>
